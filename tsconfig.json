@@ -1,0 +1,10 @@
+{
+  "extends": "@modern-js/tsconfig/base",
+  "compilerOptions": {
+    "declaration": false,
+    "jsx": "preserve",
+    "baseUrl": "./",
+  },
+  "include": ["host/src/**/*.ts", "provider/src/**/*.ts", "host/src/**/*.tsx", "provider/src/**/*.tsx"],
+  "exclude": ["**/node_modules"]
+}

@@ -6,6 +6,7 @@
     "dev": "concurrently \"pnpm -F host dev\" \"pnpm -F provider dev\""
   },
   "devDependencies": {
+    "@modern-js/tsconfig": "2.59.0",
     "concurrently": "^8.2.2"
   }
 }
