@@ -6,6 +6,7 @@ export default createModuleFederationConfig({
   manifest: {
     fileName: 'build/static/mf-manifest.json',
   },
+  dts: true,
   exposes: {
     './button': './src/components/button.tsx',
   },
@@ -13,12 +14,17 @@ export default createModuleFederationConfig({
     react: {
       singleton: true,
       requiredVersion: '18.2.0',
-      eager: true,
     },
     'react-dom': {
       singleton: true,
       requiredVersion: '18.2.0',
-      eager: true,
+    },
+    '@modern-js/runtime/router': {
+      singleton: true,
+      requiredVersion: '2.60.0',
+    },
+    'react-router-dom': {
+      singleton: true,
     },
   },
 });

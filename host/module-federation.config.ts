@@ -6,16 +6,22 @@ export default createModuleFederationConfig({
     remote:
       'frontend_admin_panel@http://localhost:3000/build/static/mf-manifest.json',
   },
+  dts: true,
   shared: {
     react: {
       singleton: true,
       requiredVersion: '18.2.0',
-      eager: true,
     },
     'react-dom': {
       singleton: true,
       requiredVersion: '18.2.0',
-      eager: true,
+    },
+    '@modern-js/runtime/router': {
+      singleton: true,
+      requiredVersion: '2.60.0',
+    },
+    'react-router-dom': {
+      singleton: true,
     },
   },
 });

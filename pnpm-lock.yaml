@@ -15,11 +15,11 @@ importers:
   host:
     dependencies:
       '@modern-js/runtime':
-        specifier: 2.59.0
-        version: 2.59.0(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 2.60.0
+        version: 2.60.0(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@module-federation/modern-js':
-        specifier: ^0.6.1
-        version: 0.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
+        specifier: ^0.6.3
+        version: 0.6.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
       node-polyfill-webpack-plugin:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.94.0(esbuild@0.17.19))
@@ -70,11 +70,11 @@ importers:
   provider:
     dependencies:
       '@modern-js/runtime':
-        specifier: 2.59.0
-        version: 2.59.0(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 2.60.0
+        version: 2.60.0(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@module-federation/modern-js':
-        specifier: ^0.6.1
-        version: 0.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)
+        specifier: ^0.6.3
+        version: 0.6.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)
       react:
         specifier: ~18.2.0
         version: 18.2.0
@@ -1161,6 +1161,12 @@ packages:
     peerDependencies:
       react: '>=17.0.0'
 
+  '@modern-js/plugin-data-loader@2.60.0':
+    resolution: {integrity: sha512-K4OH5gRFNMmp95MsmXcOHWbzGRn7gPmVaGxU1OmxgbBDykw2WbwBOVPuE5hS6gw1v4DVkWk1EieOvwt3aPTSzw==}
+    engines: {node: '>=16.2.0'}
+    peerDependencies:
+      react: '>=17.0.0'
+
   '@modern-js/plugin-i18n@2.59.0':
     resolution: {integrity: sha512-R5C0r7Lq1Btr5k1KebGSOydyzZHE/k+BKwPclnoi3qOAKsLKKRLUi0SpsNRdUn3AWY3uWlPz2z6JdabB2cmu8Q==}
 
@@ -1174,6 +1180,9 @@ packages:
 
   '@modern-js/plugin@2.59.0':
     resolution: {integrity: sha512-3Nnw7dB6HxyQMP81c4PItazWX1csoRwc58l1WASoVne3G5uj76MOHgMWhPF5zEb4U0Ezm4z//9Atnlm2gMl6NA==}
+
+  '@modern-js/plugin@2.60.0':
+    resolution: {integrity: sha512-fqHPJl3twwmqmnO4o7JTuZmzUM6v1z8MDAN33N1qJ7oNZlKMWpZKGk9Aqu+ecEe0x+rM7Vr/Spn4O+bvjdDSdw==}
 
   '@modern-js/prod-server@2.59.0':
     resolution: {integrity: sha512-Cz6Dy+lT/I04P5ZKNmD9gz5s3T9elT0ZvvykHyGtdyWXqICusC3GYllaEShwdjKVl8obXBsftRShzxEBi1IhEg==}
@@ -1193,8 +1202,19 @@ packages:
       react-dom:
         optional: true
 
-  '@modern-js/runtime@2.59.0':
-    resolution: {integrity: sha512-7/FHX8dBEAyVs7an6YrqdoB239dLzL6h4GisCzkhYceVoyQ4NyF2N1rskMdnwUvBPIFbf0iGdRGXLXlua/hfKQ==}
+  '@modern-js/runtime-utils@2.60.0':
+    resolution: {integrity: sha512-imeWddea9cZq06RyuM9ruH2f+pw0uhTN1LzO4TJ00ktCfUngMKr9nZH+zQHmjAUhOabAc7WmI4awz6fAkGXCVg==}
+    peerDependencies:
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  '@modern-js/runtime@2.60.0':
+    resolution: {integrity: sha512-TOarCBbROBaKPcUwG56N1vQe5dDHkCfi9bk+9G6VDU+aZF5CPxmUFJjA7Q63OzUOAvCW1/mWnEKeR5DWiYCH2Q==}
     engines: {node: '>=14.17.6'}
     peerDependencies:
       react: '>=17'
@@ -1227,6 +1247,9 @@ packages:
   '@modern-js/types@2.59.0':
     resolution: {integrity: sha512-wEm5+7zSdowdl8sqwtpkNe+RFchRkUcYsnYDAQYH+ldSU6/Lxx9C1/MrMKRkTZy+U4o1qLp75pXmxHzv8bcMMg==}
 
+  '@modern-js/types@2.60.0':
+    resolution: {integrity: sha512-xshNyRmoqgIrB7aQUd+0iKUXQPV+4gA+ibK1Eate+xv7hhxiD/EJAwZly/wQr0GbBvFOzZemTmsnDcZVruod6g==}
+
   '@modern-js/uni-builder@2.59.0':
     resolution: {integrity: sha512-UphlCBSpkOjG/W7BsM17ljLgpaYNKdCY1GmTXWawzs5jUJtiPZ5izDezoQKZUxaqbynzgVSjfNj/f80Q/sYO5A==}
 
@@ -1236,11 +1259,14 @@ packages:
   '@modern-js/utils@2.59.0':
     resolution: {integrity: sha512-DzmBYoc23HBO6jUc1z9uxyz9uOW0i/otBYMuzwNCtEPYE1mrHFQnLv7f+g0FzAHynSBhJKdO7ldZhG+sZpMHUQ==}
 
-  '@module-federation/bridge-react-webpack-plugin@0.6.1':
-    resolution: {integrity: sha512-or5A6sACCuRhHALlL0ZlXKhmCJeb8smZzEYlrmedjvEOmkLnKjIRgRpZchtbn+iePTf60snlbuelsEhuOXe1gg==}
+  '@modern-js/utils@2.60.0':
+    resolution: {integrity: sha512-5B8ol7ljxgXcE7j1ZYhOmMzONivSBxwWA2/9HXOtl5cqda16O2yUYMwjZK4HbW12BuSc8+W4AT6D6qUyeKxVhA==}
 
-  '@module-federation/dts-plugin@0.6.1':
-    resolution: {integrity: sha512-lOBH/GnI5T/iWmzIS8E/DaI58VHCYBDUh5oWpIvqpgVd5hYMITX4azOmZsurZpJK/COjEddYfMprXALVeUn/UQ==}
+  '@module-federation/bridge-react-webpack-plugin@0.6.3':
+    resolution: {integrity: sha512-bGqsPNMFHfGNqyVcdKIypnlmbNrJRHFADKYU3puBeyO+D8IIRoQY+GFtFMRDXakqUzQPioXhh5G1sH8GMacUig==}
+
+  '@module-federation/dts-plugin@0.6.3':
+    resolution: {integrity: sha512-U7s9dvhINav8gwbDgTaotUo0uaB1pvL/TkA9f/bBenuzOrzvjniDyISSyppfEL3n6WQJWVepNYXlKfMRAUIjkA==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1248,8 +1274,8 @@ packages:
       vue-tsc:
         optional: true
 
-  '@module-federation/enhanced@0.6.1':
-    resolution: {integrity: sha512-2oNvyqNZObp1qwr1SwEoSzpGx+MbEcVOBDw1hJrpzlMrAbGADcFlv9N1V+hnAc600jmtaHJC1GiyA2rOFWWEnw==}
+  '@module-federation/enhanced@0.6.3':
+    resolution: {integrity: sha512-Sl0A0te83Fqj3hU5HTj41xnHjJjcpP4sOZiba0+ybYeECYgAA85XlA2TMs87uGIjqPhbgBmsZtVh+muyY3ReEw==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1262,14 +1288,14 @@ packages:
       webpack:
         optional: true
 
-  '@module-federation/managers@0.6.1':
-    resolution: {integrity: sha512-3ScFROdL2zXZGSd8OvD65ZYYUbrR3djdpNmPIBkug/m7sHl0VFZRDKjHof7PfDvcaQFAeMoSSYRbNAyUfheXBQ==}
+  '@module-federation/managers@0.6.3':
+    resolution: {integrity: sha512-hOxwsqRSQm7SMiK5dlB+54X4EkooCHFPhhMhZR5Ef8KF6400IYckBBExhFAh0UaFqrNNAqvAv0CEzcWntLxtWw==}
 
-  '@module-federation/manifest@0.6.1':
-    resolution: {integrity: sha512-WPvUFaeqaxtYcQxzcYEzwlhPNAssd2l+Q82oyBX/dEM+0k1JN/NPdiWoywieY6lNCBSVPASwLut7H/L1rK8OOg==}
+  '@module-federation/manifest@0.6.3':
+    resolution: {integrity: sha512-AlRV5L2j9akl0M1VJv7WoQmngFPwqrVHQevUfziqlqLTWSA1OGaCUBgerl+iDoFwdGtj0QUUXnZrQVkrWLqm2g==}
 
-  '@module-federation/modern-js@0.6.1':
-    resolution: {integrity: sha512-b2g5sk+MCpoY+cvFIQLyqmFWxFitszeP+UNSmXHz2em/WhW73M7qiRPBcvRglyysYgZz8XnZMMuovq9PEEwVJw==}
+  '@module-federation/modern-js@0.6.3':
+    resolution: {integrity: sha512-D80gzhu8SD+Buyv/xmsWUJ7OsNdbR8I/RBfkCwcxgr8+QNW16L//L3ZGEzbF/NyW5EOu84gVQ3fsfxl53TTqCg==}
     peerDependencies:
       react: '>=17'
       react-dom: '>=17'
@@ -1281,8 +1307,8 @@ packages:
       vue-tsc:
         optional: true
 
-  '@module-federation/node@2.5.11':
-    resolution: {integrity: sha512-pjl6FYy7MFWRRxZCmbv6wgIbDRfxMBw95gBUjaBIeR4Hg+hGhZa0Ii1K3OYK8YAt0DNdizXXdHO4yy/dWTjMww==}
+  '@module-federation/node@2.5.13':
+    resolution: {integrity: sha512-GFslxvnnIouawstGnPiwtCBhsZwTGpRclXpX+jw/mo8PJRA3kJ09qoUAmmBrLb2dTRANg8+Tk8FahKqLhWCHeg==}
     peerDependencies:
       next: '*'
       react: ^16||^17||^18
@@ -1296,8 +1322,8 @@ packages:
       react-dom:
         optional: true
 
-  '@module-federation/rspack@0.6.1':
-    resolution: {integrity: sha512-cxzKSX/+TpIRobyPnstwA1Zy81Ro/YFVdSmY4TxvKl3yGZPLcQhPK6zsqcdsZp2BpWubI6boPaRbZmth5eXmYg==}
+  '@module-federation/rspack@0.6.3':
+    resolution: {integrity: sha512-HyDJJypBDMrOdJbMBg1IeMPDUY52cg+xY9NSfay2CHFtt9ygKiG3hB5BNQIq+WWEKmmVZPOAE5+S+8E6PtcKdA==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1310,26 +1336,26 @@ packages:
   '@module-federation/runtime-tools@0.5.1':
     resolution: {integrity: sha512-nfBedkoZ3/SWyO0hnmaxuz0R0iGPSikHZOAZ0N/dVSQaIzlffUo35B5nlC2wgWIc0JdMZfkwkjZRrnuuDIJbzg==}
 
-  '@module-federation/runtime-tools@0.6.1':
-    resolution: {integrity: sha512-pnc0VZb3jjxrRI1t/K+QfSQ4Viim6VwoQQIeefBLzd2SIMD/LhrYfGzz/glrVHGnAFpxOE/pVANdqlknTMAerw==}
+  '@module-federation/runtime-tools@0.6.3':
+    resolution: {integrity: sha512-hYr5r0YFpdQowBXUJvtvZAyl3iTvZlYOb5ekrhEb4cw+tgUT2g8am5Ao3Tqw5dlMdZR6E5yPDwpsHsxZgt3MVg==}
 
   '@module-federation/runtime@0.5.1':
     resolution: {integrity: sha512-xgiMUWwGLWDrvZc9JibuEbXIbhXg6z2oUkemogSvQ4LKvrl/n0kbqP1Blk669mXzyWbqtSp6PpvNdwaE1aN5xQ==}
 
-  '@module-federation/runtime@0.6.1':
-    resolution: {integrity: sha512-57NvdAwrQagw7bEAjvIav8sU0srTT5O+ul8hl86j2a3I5gYBF6NN2QGx4w5d/exgXUcqmUQZBV6I3q5NrcRzfg==}
+  '@module-federation/runtime@0.6.3':
+    resolution: {integrity: sha512-Ft5/vzAVPrZWP5xyKulsxz8/r3T9ZCcUb1ttimx7mDvrA+mfAM8zuFvqzGMCscLwoP1u2uw8+qAZ19o4galmiA==}
 
   '@module-federation/sdk@0.5.1':
     resolution: {integrity: sha512-exvchtjNURJJkpqjQ3/opdbfeT2wPKvrbnGnyRkrwW5o3FH1LaST1tkiNviT6OXTexGaVc2DahbdniQHVtQ7pA==}
 
-  '@module-federation/sdk@0.6.1':
-    resolution: {integrity: sha512-OjDW2sYz4iaZnu4rpTlYDzjXAQiLLzCPwIFM+UFvRtdgWN08Bjn5sDRgMzP2x2ziLzonwmEFDEK9Sl2h85NtJg==}
+  '@module-federation/sdk@0.6.3':
+    resolution: {integrity: sha512-bzkP1snAiQgP5Opkv605iWn70whj4izuuTeHCuXhN0IG1sS8qzfOY7se3eyvQw1qTpLwSYZ2MfKEO0aBSQGT9w==}
 
-  '@module-federation/third-party-dts-extractor@0.6.1':
-    resolution: {integrity: sha512-65Xs4CRXkxLyGYhC4+XJ2Y7qcDsReI+xWt7bREe057PI/ZYp9FAbBO3M5E1eLVHeDdwcU5IQ9RigzGau527VbQ==}
+  '@module-federation/third-party-dts-extractor@0.6.3':
+    resolution: {integrity: sha512-L9DFp1r/JQc2b0ej+BfFncpt4HgnZhi26vRUa2R45oel9oO6W6AoRFNeVeKrUs13h4dYiaeGIrQt3oA+C+mD+w==}
 
-  '@module-federation/utilities@3.1.7':
-    resolution: {integrity: sha512-b0BjOCkDjtyjGleUgUeXAPnMKt6ww5ihDR6ayTyDiVSVMQfzReomeI+FHrsFHgPhzSW7fXNtUcJYmjay6/Fvsw==}
+  '@module-federation/utilities@3.1.9':
+    resolution: {integrity: sha512-8BjO3FyrCsj/RWYxr+GdU85yc84YQjKVuW3U3b5BwxLgTiCpsFiTrx/iav8Q8dMWx/ctnw6MJCcUWdFGhi5d2Q==}
     peerDependencies:
       next: '*'
       react: ^16 || ^17 || ^18
@@ -1346,8 +1372,8 @@ packages:
   '@module-federation/webpack-bundler-runtime@0.5.1':
     resolution: {integrity: sha512-mMhRFH0k2VjwHt3Jol9JkUsmI/4XlrAoBG3E0o7HoyoPYv1UFOWyqAflfANcUPgbYpvqmyLzDcO+3IT36LXnrA==}
 
-  '@module-federation/webpack-bundler-runtime@0.6.1':
-    resolution: {integrity: sha512-Gl8iSAS/xvdlicQPFA7URkwUU2HhjQ1L7tHL7s9TWecuDb12Pj0DMkRqE3QimYvitXtvgDqk9B7YUz+diYuCFA==}
+  '@module-federation/webpack-bundler-runtime@0.6.3':
+    resolution: {integrity: sha512-TBPuK55XYgA7BZZsdEhERIFxmfRJO/8s+zQyHsOKw2JsPrcG/L04xNGLNfRswRzujc/1n8y8EvXZ7hb2KuST+w==}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
@@ -1827,7 +1853,7 @@ packages:
     resolution: {integrity: sha512-n8oxjeb5aIbPFEtmQxQYOLI0i9n5ySBEY/ZEHHZqKQSFnxio1rv6dthascc9dLuwrL0RC5mPCxB7vnAVGAYWAQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
-      eslint: 8.57.0
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
 
   '@typescript-eslint/visitor-keys@5.62.0':
     resolution: {integrity: sha512-07ny+LHRzQXepkGg6w0mFY41fVUNBrL2Roj/++7V1txKugfjm/Ci/qSND03r2RhlJhJYMcTn9AhhSSqQp0Ysyw==}
@@ -6812,6 +6838,18 @@ snapshots:
       - react-dom
       - supports-color
 
+  '@modern-js/plugin-data-loader@2.60.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@babel/core': 7.25.2
+      '@modern-js/runtime-utils': 2.60.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@modern-js/utils': 2.60.0
+      '@swc/helpers': 0.5.13
+      path-to-regexp: 6.2.2
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - supports-color
+
   '@modern-js/plugin-i18n@2.59.0':
     dependencies:
       '@modern-js/utils': 2.59.0
@@ -6831,6 +6869,11 @@ snapshots:
     dependencies:
       '@modern-js/utils': 2.59.0
       '@swc/helpers': 0.5.3
+
+  '@modern-js/plugin@2.60.0':
+    dependencies:
+      '@modern-js/utils': 2.60.0
+      '@swc/helpers': 0.5.13
 
   '@modern-js/prod-server@2.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
@@ -6865,7 +6908,19 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@modern-js/runtime@2.59.0(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@modern-js/runtime-utils@2.60.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@modern-js/utils': 2.60.0
+      '@remix-run/router': 1.15.0
+      '@swc/helpers': 0.5.13
+      lru-cache: 6.0.0
+      react-router-dom: 6.22.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      serialize-javascript: 6.0.2
+    optionalDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@modern-js/runtime@2.60.0(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/types': 7.25.6
@@ -6878,12 +6933,12 @@ snapshots:
       '@modern-js-reduck/plugin-immutable': 1.1.11(@modern-js-reduck/store@1.1.11)
       '@modern-js-reduck/react': 1.1.11(@types/react-dom@18.0.11)(@types/react@18.0.38)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@modern-js-reduck/store': 1.1.11
-      '@modern-js/plugin': 2.59.0
-      '@modern-js/plugin-data-loader': 2.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@modern-js/runtime-utils': 2.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@modern-js/types': 2.59.0
-      '@modern-js/utils': 2.59.0
-      '@swc/helpers': 0.5.3
+      '@modern-js/plugin': 2.60.0
+      '@modern-js/plugin-data-loader': 2.60.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@modern-js/runtime-utils': 2.60.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@modern-js/types': 2.60.0
+      '@modern-js/utils': 2.60.0
+      '@swc/helpers': 0.5.13
       '@types/loadable__component': 5.13.9
       '@types/react-helmet': 6.1.11
       '@types/styled-components': 5.1.34
@@ -6968,6 +7023,8 @@ snapshots:
   '@modern-js/tsconfig@2.59.0': {}
 
   '@modern-js/types@2.59.0': {}
+
+  '@modern-js/types@2.60.0': {}
 
   '@modern-js/uni-builder@2.59.0(@rspack/core@1.0.3(@swc/helpers@0.5.13))(esbuild@0.17.19)(styled-components@5.3.11(@babel/core@7.25.2)(react-dom@18.2.0(react@18.2.0))(react-is@18.3.1)(react@18.2.0))(type-fest@0.21.3)(typescript@5.0.4)':
     dependencies:
@@ -7058,17 +7115,24 @@ snapshots:
       lodash: 4.17.21
       rslog: 1.2.3
 
-  '@module-federation/bridge-react-webpack-plugin@0.6.1':
+  '@modern-js/utils@2.60.0':
     dependencies:
-      '@module-federation/sdk': 0.6.1
+      '@swc/helpers': 0.5.13
+      caniuse-lite: 1.0.30001658
+      lodash: 4.17.21
+      rslog: 1.2.3
+
+  '@module-federation/bridge-react-webpack-plugin@0.6.3':
+    dependencies:
+      '@module-federation/sdk': 0.6.3
       '@types/semver': 7.5.8
       semver: 7.6.3
 
-  '@module-federation/dts-plugin@0.6.1(typescript@5.0.4)':
+  '@module-federation/dts-plugin@0.6.3(typescript@5.0.4)':
     dependencies:
-      '@module-federation/managers': 0.6.1
-      '@module-federation/sdk': 0.6.1
-      '@module-federation/third-party-dts-extractor': 0.6.1
+      '@module-federation/managers': 0.6.3
+      '@module-federation/sdk': 0.6.3
+      '@module-federation/third-party-dts-extractor': 0.6.3
       adm-zip: 0.5.16
       ansi-colors: 4.1.3
       axios: 1.7.7
@@ -7088,15 +7152,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/enhanced@0.6.1(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))':
+  '@module-federation/enhanced@0.6.3(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))':
     dependencies:
-      '@module-federation/bridge-react-webpack-plugin': 0.6.1
-      '@module-federation/dts-plugin': 0.6.1(typescript@5.0.4)
-      '@module-federation/managers': 0.6.1
-      '@module-federation/manifest': 0.6.1(typescript@5.0.4)
-      '@module-federation/rspack': 0.6.1(typescript@5.0.4)
-      '@module-federation/runtime-tools': 0.6.1
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/bridge-react-webpack-plugin': 0.6.3
+      '@module-federation/dts-plugin': 0.6.3(typescript@5.0.4)
+      '@module-federation/managers': 0.6.3
+      '@module-federation/manifest': 0.6.3(typescript@5.0.4)
+      '@module-federation/rspack': 0.6.3(typescript@5.0.4)
+      '@module-federation/runtime-tools': 0.6.3
+      '@module-federation/sdk': 0.6.3
       btoa: 1.2.1
       upath: 2.0.1
     optionalDependencies:
@@ -7108,15 +7172,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/enhanced@0.6.1(typescript@5.0.4)(webpack@5.94.0)':
+  '@module-federation/enhanced@0.6.3(typescript@5.0.4)(webpack@5.94.0)':
     dependencies:
-      '@module-federation/bridge-react-webpack-plugin': 0.6.1
-      '@module-federation/dts-plugin': 0.6.1(typescript@5.0.4)
-      '@module-federation/managers': 0.6.1
-      '@module-federation/manifest': 0.6.1(typescript@5.0.4)
-      '@module-federation/rspack': 0.6.1(typescript@5.0.4)
-      '@module-federation/runtime-tools': 0.6.1
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/bridge-react-webpack-plugin': 0.6.3
+      '@module-federation/dts-plugin': 0.6.3(typescript@5.0.4)
+      '@module-federation/managers': 0.6.3
+      '@module-federation/manifest': 0.6.3(typescript@5.0.4)
+      '@module-federation/rspack': 0.6.3(typescript@5.0.4)
+      '@module-federation/runtime-tools': 0.6.3
+      '@module-federation/sdk': 0.6.3
       btoa: 1.2.1
       upath: 2.0.1
     optionalDependencies:
@@ -7128,17 +7192,17 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/managers@0.6.1':
+  '@module-federation/managers@0.6.3':
     dependencies:
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/sdk': 0.6.3
       find-pkg: 2.0.0
       fs-extra: 9.1.0
 
-  '@module-federation/manifest@0.6.1(typescript@5.0.4)':
+  '@module-federation/manifest@0.6.3(typescript@5.0.4)':
     dependencies:
-      '@module-federation/dts-plugin': 0.6.1(typescript@5.0.4)
-      '@module-federation/managers': 0.6.1
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/dts-plugin': 0.6.3(typescript@5.0.4)
+      '@module-federation/managers': 0.6.3
+      '@module-federation/sdk': 0.6.3
       chalk: 3.0.0
       find-pkg: 2.0.0
     transitivePeerDependencies:
@@ -7149,13 +7213,13 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/modern-js@0.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))':
+  '@module-federation/modern-js@0.6.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))':
     dependencies:
       '@modern-js/node-bundle-require': 2.54.2
       '@modern-js/utils': 2.54.2
-      '@module-federation/enhanced': 0.6.1(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
-      '@module-federation/node': 2.5.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/enhanced': 0.6.3(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
+      '@module-federation/node': 2.5.13(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
+      '@module-federation/sdk': 0.6.3
       '@swc/helpers': 0.5.12
       hoist-non-react-statics: 3.3.2
       node-fetch: 3.3.2
@@ -7172,13 +7236,13 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@module-federation/modern-js@0.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)':
+  '@module-federation/modern-js@0.6.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)':
     dependencies:
       '@modern-js/node-bundle-require': 2.54.2
       '@modern-js/utils': 2.54.2
-      '@module-federation/enhanced': 0.6.1(typescript@5.0.4)(webpack@5.94.0)
-      '@module-federation/node': 2.5.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/enhanced': 0.6.3(typescript@5.0.4)(webpack@5.94.0)
+      '@module-federation/node': 2.5.13(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)
+      '@module-federation/sdk': 0.6.3
       '@swc/helpers': 0.5.12
       hoist-non-react-statics: 3.3.2
       node-fetch: 3.3.2
@@ -7195,12 +7259,12 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@module-federation/node@2.5.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))':
+  '@module-federation/node@2.5.13(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))':
     dependencies:
-      '@module-federation/enhanced': 0.6.1(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
-      '@module-federation/runtime': 0.6.1
-      '@module-federation/sdk': 0.6.1
-      '@module-federation/utilities': 3.1.7(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0(esbuild@0.17.19))
+      '@module-federation/enhanced': 0.6.3(typescript@5.0.4)(webpack@5.94.0(esbuild@0.17.19))
+      '@module-federation/runtime': 0.6.3
+      '@module-federation/sdk': 0.6.3
+      '@module-federation/utilities': 3.1.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0(esbuild@0.17.19))
       btoa: 1.2.1
       encoding: 0.1.13
       node-fetch: 2.7.0(encoding@0.1.13)
@@ -7216,12 +7280,12 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/node@2.5.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)':
+  '@module-federation/node@2.5.13(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.0.4)(webpack@5.94.0)':
     dependencies:
-      '@module-federation/enhanced': 0.6.1(typescript@5.0.4)(webpack@5.94.0)
-      '@module-federation/runtime': 0.6.1
-      '@module-federation/sdk': 0.6.1
-      '@module-federation/utilities': 3.1.7(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0)
+      '@module-federation/enhanced': 0.6.3(typescript@5.0.4)(webpack@5.94.0)
+      '@module-federation/runtime': 0.6.3
+      '@module-federation/sdk': 0.6.3
+      '@module-federation/utilities': 3.1.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0)
       btoa: 1.2.1
       encoding: 0.1.13
       node-fetch: 2.7.0(encoding@0.1.13)
@@ -7237,14 +7301,14 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/rspack@0.6.1(typescript@5.0.4)':
+  '@module-federation/rspack@0.6.3(typescript@5.0.4)':
     dependencies:
-      '@module-federation/bridge-react-webpack-plugin': 0.6.1
-      '@module-federation/dts-plugin': 0.6.1(typescript@5.0.4)
-      '@module-federation/managers': 0.6.1
-      '@module-federation/manifest': 0.6.1(typescript@5.0.4)
-      '@module-federation/runtime-tools': 0.6.1
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/bridge-react-webpack-plugin': 0.6.3
+      '@module-federation/dts-plugin': 0.6.3(typescript@5.0.4)
+      '@module-federation/managers': 0.6.3
+      '@module-federation/manifest': 0.6.3(typescript@5.0.4)
+      '@module-federation/runtime-tools': 0.6.3
+      '@module-federation/sdk': 0.6.3
     optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -7258,40 +7322,40 @@ snapshots:
       '@module-federation/runtime': 0.5.1
       '@module-federation/webpack-bundler-runtime': 0.5.1
 
-  '@module-federation/runtime-tools@0.6.1':
+  '@module-federation/runtime-tools@0.6.3':
     dependencies:
-      '@module-federation/runtime': 0.6.1
-      '@module-federation/webpack-bundler-runtime': 0.6.1
+      '@module-federation/runtime': 0.6.3
+      '@module-federation/webpack-bundler-runtime': 0.6.3
 
   '@module-federation/runtime@0.5.1':
     dependencies:
       '@module-federation/sdk': 0.5.1
 
-  '@module-federation/runtime@0.6.1':
+  '@module-federation/runtime@0.6.3':
     dependencies:
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/sdk': 0.6.3
 
   '@module-federation/sdk@0.5.1': {}
 
-  '@module-federation/sdk@0.6.1': {}
+  '@module-federation/sdk@0.6.3': {}
 
-  '@module-federation/third-party-dts-extractor@0.6.1':
+  '@module-federation/third-party-dts-extractor@0.6.3':
     dependencies:
       find-pkg: 2.0.0
       fs-extra: 9.1.0
       resolve: 1.22.8
 
-  '@module-federation/utilities@3.1.7(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0(esbuild@0.17.19))':
+  '@module-federation/utilities@3.1.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0(esbuild@0.17.19))':
     dependencies:
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/sdk': 0.6.3
       webpack: 5.94.0(esbuild@0.17.19)
     optionalDependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@module-federation/utilities@3.1.7(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0)':
+  '@module-federation/utilities@3.1.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(webpack@5.94.0)':
     dependencies:
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/sdk': 0.6.3
       webpack: 5.94.0
     optionalDependencies:
       react: 18.2.0
@@ -7302,10 +7366,10 @@ snapshots:
       '@module-federation/runtime': 0.5.1
       '@module-federation/sdk': 0.5.1
 
-  '@module-federation/webpack-bundler-runtime@0.6.1':
+  '@module-federation/webpack-bundler-runtime@0.6.3':
     dependencies:
-      '@module-federation/runtime': 0.6.1
-      '@module-federation/sdk': 0.6.1
+      '@module-federation/runtime': 0.6.3
+      '@module-federation/sdk': 0.6.3
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     dependencies:
